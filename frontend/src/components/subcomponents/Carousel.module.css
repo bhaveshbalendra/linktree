@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+
+.carousel {
+  display: flex;
+  animation: scrollleft 30s linear infinite;
+}
+
+.item {
+  width: 200px;
+  border-radius: 10px;
+  height: auto;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 10px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+.carousel:hover {
+  animation-play-state: paused; 
+}
+
+@keyframes scrollleft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,38 @@
+.innerHeadings {
+  overflow: hidden;
+  height: 60px;
+}
+
+.innerHeadings span {
+  position: relative;
+
+  animation: animation 6s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -65px;
+  }
+  45% {
+    top: -65px;
+  }
+  50% {
+    top: -120px;
+  }
+  70% {
+    top: -120px;
+  }
+  75% {
+    top: -190px;
+  }
+  95% {
+    top: -190px;
+  }
+}
